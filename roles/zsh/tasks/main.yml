@@ -1,0 +1,31 @@
+
+# Installs and configures Zsh using Oh-My-Zsh
+
+- name: Install ZSH
+  dnf:
+          name: zsh 
+          state: latest
+
+
+- name: Set zsh as default shell
+  user:
+          name: "{{ ansible_ssh_user }}"
+          shell: /bin/zsh
+  become: yes
+
+
+- name: Download oh-my-zsh
+  get_url:
+          url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh          
+          dest: /tmp/install-oh-my-zsh.sh
+          mode: 0755 # Makes retrieved files executable
+
+
+- name: Install oh-my-zsh 
+  command: zsh /tmp/install-oh-my-zsh.sh
+
+
+- name: Place zshrc in home directory
+  copy: 
+        src: zshrc
+        dest: ~/.zshrc
