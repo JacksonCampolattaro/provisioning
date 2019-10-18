@@ -1,10 +1,11 @@
 
 # Installs and configures vim, with all its dotfiles
 
-- name: Install vim
+- name: Install vim if it isn't already installed
   dnf:
           name: vim-enhanced
           state: latest
+  become: yes
 
 
 - name: Place vimrc in home directory
@@ -14,4 +15,4 @@
 
 
 - name: Install Vundle plugins for vim
-  command: vim -E -s -c "source ~/.vimrc" +PluginInstall +qall -V
+  shell: vim +PluginInstall +qall

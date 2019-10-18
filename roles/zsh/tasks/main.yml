@@ -5,6 +5,7 @@
   dnf:
           name: zsh 
           state: latest
+  become: yes
 
 
 - name: Set zsh as default shell
@@ -23,6 +24,8 @@
 
 - name: Install oh-my-zsh 
   command: zsh /tmp/install-oh-my-zsh.sh
+  args:
+          creates: ~/.oh-my-zsh
 
 
 - name: Place zshrc in home directory

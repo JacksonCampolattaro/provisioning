@@ -1,7 +1,0 @@
-
-# Makes things easier when I want to run my playbook locally
-[local]
-localhost
-
-[local:vars]
-ansible_connection=local
