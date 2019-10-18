@@ -1,0 +1,9 @@
+---
+
+- name: Setting up my personal development environment
+  hosts: local
+  roles:
+          role: zsh
+          role: vim
+          role: conky
+
