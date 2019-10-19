@@ -28,6 +28,9 @@ set foldmethod=syntax
 " Enables mouse support
 set mouse=a
 
+" Binds the spacebar to :
+noremap <space> :
+
 " Creates a word-processor-like mode for vim
 func! WordProcessor()
 

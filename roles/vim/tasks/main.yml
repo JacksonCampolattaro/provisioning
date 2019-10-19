@@ -2,7 +2,7 @@
 # Installs and configures vim, with all its dotfiles
 
 - name: Install vim if it isn't already installed
-  dnf:
+  package:
           name: vim-enhanced
           state: latest
   become: yes

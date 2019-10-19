@@ -2,7 +2,7 @@
 # Installs and configures Zsh using Oh-My-Zsh
 
 - name: Install ZSH
-  dnf:
+  package:
           name: zsh 
           state: latest
   become: yes

@@ -1,0 +1,8 @@
+---
+
+- name: rLogin test
+  hosts: rLogin
+  roles:
+          - zsh
+          - vim
+
