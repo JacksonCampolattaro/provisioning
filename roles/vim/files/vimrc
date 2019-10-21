@@ -61,6 +61,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 
 call vundle#end()
 filetype plugin indent on
