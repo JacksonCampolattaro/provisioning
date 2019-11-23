@@ -18,12 +18,12 @@
 - name: Download oh-my-zsh
   get_url:
           url: https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh          
-          dest: /tmp/install-oh-my-zsh.sh
+          dest: ~/tmp/install-oh-my-zsh.sh
           mode: 0755 # Makes retrieved files executable
 
 
 - name: Install oh-my-zsh 
-  command: zsh /tmp/install-oh-my-zsh.sh
+  command: zsh ~/tmp/install-oh-my-zsh.sh
   args:
           creates: ~/.oh-my-zsh
 
