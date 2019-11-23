@@ -10,9 +10,8 @@
 
 - name: Place vimrc in home directory
   copy: 
-        src: "vimrc"
-        dest: "~/.vimrc"
-  become: yes
+        src: vimrc
+        dest: ~/.vimrc
 
 
 - name: Install Vundle plugins for vim
