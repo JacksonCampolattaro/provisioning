@@ -12,7 +12,6 @@
   user:
           name: "{{ ansible_ssh_user }}"
           shell: /bin/zsh
-  become: yes
   
 
 - name: Create temporary directory
