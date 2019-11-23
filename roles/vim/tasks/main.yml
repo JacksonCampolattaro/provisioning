@@ -14,5 +14,5 @@
         dest: ~/.vimrc
 
 
-#- name: Install Vundle plugins for vim
-#  shell: vim +PluginInstall +qall
+- name: Install Vundle plugins for vim
+  shell: vim +'PlugInstall --sync' +qa
