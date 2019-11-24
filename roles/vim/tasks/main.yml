@@ -36,7 +36,16 @@
   copy: 
         src: youCompleteMe.conf
         dest: ~/.vim/.ycm_extra_conf.py
-        
+
+
+- name: Install prerequisites for youCompleteMe compilation
+  package: name={{item}} state=latest
+  with_items:
+       - cmake
+       - make 
+       - python3-devel
+       - gcc-c++
+  become: yes
 
 # For now it's necessary to install plugins by hand
 
