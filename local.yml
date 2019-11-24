@@ -5,6 +5,7 @@
   connection: local
   strategy: debug
   roles:
+          - spotify
           - gnome-theming
           - gnome-terminal
           - zsh
