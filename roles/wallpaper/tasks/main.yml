@@ -22,5 +22,5 @@
 
 - name: Set wallpaper to solarized
   dconf: 
-          key: : "/org/gnome/desktop/background/picture-uri"
+          key: "/org/gnome/desktop/background/picture-uri"
           value: file:///home/jackcamp/Pictures/solarized.png
