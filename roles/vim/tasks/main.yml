@@ -14,6 +14,12 @@
         dest: ~/.vimrc
         
         
+- name: Add the solarized color scheme
+  copy: 
+        src: solarized.vim
+        dest: ~/.vim/colors/solarized.vim
+        
+        
 - name: Installing vundle for plugin management
   git: 
         repo: https://github.com/VundleVim/Vundle.vim.git
