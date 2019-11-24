@@ -6,6 +6,7 @@
   roles:
           - zsh
           - vim
+          - gnome-terminal
           - wallpaper
 
 
