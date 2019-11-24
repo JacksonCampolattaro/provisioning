@@ -29,17 +29,15 @@
 
 
 - name: Install oh-my-zsh 
-  command: zsh ~/tmp/install-oh-my-zsh.sh
-  args:
+  command: 
+          cmd: zsh ~/tmp/install-oh-my-zsh.sh
           creates: ~/.oh-my-zsh
 
 
 - name: Place zshrc in home directory
   copy: 
         src: zshrc
-        dest: ~/.zshrc
-        
-        
+        dest: ~/.zshrc  
 
 
 - name: Install zsh-syntax-highlighting
