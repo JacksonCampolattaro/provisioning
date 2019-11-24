@@ -34,7 +34,8 @@
         
 
 - name: Running vundle to install all my plugins
-  shell: vim +'PlugInstall --sync' +qall &> /dev/null < /dev/tty
+  shell: vim +PluginInstall +qall
+  #shell: vim +'PluginInstall --sync' +qall &> /dev/null < /dev/tty
         
         
 - name: Add the youCompleteMe configuration file
