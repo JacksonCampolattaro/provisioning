@@ -3,6 +3,7 @@
 - name: Setting up my personal development environment
   hosts: 127.0.0.1
   connection: local
+  strategy: debug
   roles:
           - zsh
           - vim
