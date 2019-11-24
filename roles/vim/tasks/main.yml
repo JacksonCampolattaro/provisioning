@@ -46,7 +46,14 @@
        - python3-devel
        - gcc-c++
   become: yes
-
+        
+        
+- name: Installing youCompleteMe
+  shell: 
+        cmd: python3 install.py --clang-completer
+        chdir: ~/.vim/bundle/youcompleteme
+        
+        
 # For now it's necessary to install plugins by hand
 
 #- name: Install Vundle plugins for vim
