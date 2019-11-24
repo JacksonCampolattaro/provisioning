@@ -1,6 +1,13 @@
 
 # Sets the theme and icon pack how I like them
 
+- name: Installs psutils to enable changing dconf values
+  package: 
+          name: python3-psutil
+          state: latest
+  become: yes
+  
+
 - name: Install arc theme if it isn't already installed
   package:
           name: arc-theme
