@@ -6,3 +6,10 @@
           name: arc-theme
           state: latest
   become: yes
+  
+
+- name: Install numix-circle icon pack if it isn't already installed
+  package:
+          name: numix-icon-theme-circle
+          state: latest
+  become: yes
