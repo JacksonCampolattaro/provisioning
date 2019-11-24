@@ -25,7 +25,7 @@
 - name: Set theme to arc-dark
   dconf: 
           key: "/org/gnome/desktop/interface/gtk-theme"
-          value: "'Arc-dark'"
+          value: "'Arc-Dark'"
   
 
 - name: Install numix-circle icon pack if it isn't already installed
@@ -38,4 +38,4 @@
 - name: Set icon pack to numix
   dconf: 
           key: "/org/gnome/desktop/interface/icon-theme"
-          value: "'Numix-circle'"
+          value: "'Numix-Circle'"
