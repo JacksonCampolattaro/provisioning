@@ -28,7 +28,7 @@
   become: yes     
             
 
-- name: Set icon pack to arc-dark
+- name: Set icon pack to numix
   dconf: 
           key: "/org/gnome/desktop/interface/icon-theme"
           value: "'Numix-circle'"
