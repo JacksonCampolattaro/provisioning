@@ -1,6 +1,13 @@
 
 # Sets my wallpaper
 
+- name: Installs psutils to enable changing dconf values
+  package: 
+          name: python3-psutil
+          state: latest
+  become: yes
+          
+
 - name: Set wallpaper to solarized
   dconf: 
           key: /org/gnome/desktop/background/picture-uri
