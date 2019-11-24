@@ -1,0 +1,9 @@
+
+# Installs spotify from the negativo repository
+
+- name: Install spotify client from negativo
+  package:
+          name: spotify-client 
+          enablerepo: https://negativo17.org/repos/fedora-spotify.repo
+          state: latest
+  become: yes
