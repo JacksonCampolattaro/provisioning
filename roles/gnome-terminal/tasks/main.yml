@@ -17,5 +17,5 @@
 - name: Load dconf file of gnome-terminal
   shell: 
           chdir: ~/tmp
-          cmd: dconf load /org/gnome/terminal/ < gnome-terminal-settings.txt
-          #cmd: "dconf load -f /org/gnome/terminal/ < ~/tmp/gnome-terminal-settings.dconf"
+          cmd: dconf load /org/gnome/terminal/ < ~/tmp/gnome-terminal-settings.dconf
+          #cmd: dconf load /org/gnome/terminal/ < gnome-terminal-settings.txt
