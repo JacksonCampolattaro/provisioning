@@ -1,0 +1,6 @@
+
+# Configures my terminal settings using dconf
+
+- name: Load dconf file of gnome-terminal
+  command: 
+          cmd: dconf load /org/gnome/terminal/ < gnome-terminal-settings.txt
