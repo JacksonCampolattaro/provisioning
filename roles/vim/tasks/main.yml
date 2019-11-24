@@ -31,6 +31,12 @@
         repo: https://github.com/VundleVim/Vundle.vim.git
         dest: ~/.vim/bundle/Vundle.vim
         
+        
+- name: Add the youCompleteMe configuration file
+  copy: 
+        src: youCompleteMe.conf
+        dest: ~/.vim/.ycm_extra_conf.py
+        
 
 # For now it's necessary to install plugins by hand
 
