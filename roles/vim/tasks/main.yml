@@ -32,6 +32,11 @@
         dest: ~/.vim/bundle/Vundle.vim
         
         
+
+- name: Running vundle to install all my plugins
+  shell: vim +'PlugInstall --sync' +qall &> /dev/null < /dev/tty
+        
+        
 - name: Add the youCompleteMe configuration file
   copy: 
         src: youCompleteMe.conf
@@ -53,8 +58,6 @@
         cmd: python3 install.py --clang-completer
         chdir: ~/.vim/bundle/youcompleteme
         
-        
-# For now it's necessary to install plugins by hand
 
 #- name: Install Vundle plugins for vim
 #  shell: vim +'PlugInstall --sync' +qall &> /dev/null < /dev/tty
