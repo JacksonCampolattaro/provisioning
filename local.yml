@@ -5,9 +5,10 @@
   connection: local
   strategy: debug
   roles:
+          - gnome-theming
+          - gnome-terminal
           - zsh
           - vim
-          - gnome-terminal
           - wallpaper
 
 
