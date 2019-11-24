@@ -71,7 +71,7 @@ ENABLE_CORRECTION="true"
 plugins=(
 	git
 	dnf
-	zsh-syntax-highlighting
+	# zsh-syntax-highlighting # This is provided by a package, instead 
 	)
 
 source $ZSH/oh-my-zsh.sh
