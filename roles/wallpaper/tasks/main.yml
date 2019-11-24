@@ -1,0 +1,7 @@
+
+# Sets my wallpaper
+
+- name: Set wallpaper to solarized
+  dconf: 
+          key: /org/gnome/desktop/background/picture-uri
+          value: solarized.png
