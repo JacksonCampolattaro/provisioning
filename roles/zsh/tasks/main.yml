@@ -38,3 +38,12 @@
   copy: 
         src: zshrc
         dest: ~/.zshrc
+        
+        
+
+
+- name: Install zsh-syntax-highlighting
+  package:
+          name: zsh-syntax-highlighting 
+          state: latest
+  become: yes
