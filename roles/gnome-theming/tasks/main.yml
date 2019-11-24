@@ -1,0 +1,8 @@
+
+# Sets the theme and icon pack how I like them
+
+- name: Install arc theme if it isn't already installed
+  package:
+          name: arc-theme
+          state: latest
+  become: yes
