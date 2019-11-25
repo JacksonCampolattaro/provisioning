@@ -1,8 +1,8 @@
 
 # Installs compilers and other tools I need for building
 
-- name: Install gcc for c++
+- name: Install standard set of development tools
   package:
-          name: gcc-c++
+          name: "Development Tools"
           state: latest
   become: yes
