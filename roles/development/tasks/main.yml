@@ -9,6 +9,12 @@
   become: yes
   
 
+- name: Creates a missing symlink that can prevent installation
+  command:
+          cmd: ln -s /var/lib/snapd/snap /snap
+  become: yes
+  
+
 - name: Install CLion using snap
   snap:
           name: clion
