@@ -6,3 +6,5 @@
           name: "@Development Tools"
           state: latest
   become: yes
+  async: 512
+  poll: 5
