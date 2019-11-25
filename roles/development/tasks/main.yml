@@ -21,10 +21,23 @@
   command:
           cmd: snap wait system seed.loaded
   become: yes
-  
+
 
 - name: Install CLion using snap
   snap:
           name: clion
           classic: yes
+  become: yes
+  
+
+- name: Install intelliJ using snap
+  snap:
+          name: intellij-idea-ultimate
+          classic: yes
+  become: yes
+  
+  
+- name: Enable git caching of Github credentials
+  command:
+          cmd: git config --global credential.helper cache
   become: yes
