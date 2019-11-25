@@ -1,0 +1,8 @@
+
+# Installs compilers and other tools I need for building
+
+- name: Install gcc for c++
+  package:
+          name: gcc-c++
+          state: latest
+  become: yes
