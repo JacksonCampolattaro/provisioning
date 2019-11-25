@@ -11,8 +11,8 @@
 
 - name: Creates a missing symlink that can prevent installation
   file:
-          dest: /var/lib/snapd/snap
-          path: /snap
+          src: /var/lib/snapd/snap
+          dest: /snap
           owner: root
           group: root
           state: link
