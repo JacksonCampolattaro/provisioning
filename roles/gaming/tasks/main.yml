@@ -1,0 +1,16 @@
+
+# Installs and configures steam
+
+
+- name: Install the necessary third party repositories
+  package:
+          name: fedora-workstation-repositories
+          state: latest
+  become: yes
+
+
+- name: Install steam
+  package:
+          name: steam
+          state: latest
+  become: yes
