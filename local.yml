@@ -5,10 +5,10 @@
   connection: local
   strategy: debug
   roles:
-          - gnome-theming
-          - gnome-terminal
-          - zsh
-          - vim
-          - wallpaper
-          #- spotify
+          #- gnome-theming
+          #- gnome-terminal
+          #- zsh
+          #- vim
+          #- wallpaper
+          - spotify
 
