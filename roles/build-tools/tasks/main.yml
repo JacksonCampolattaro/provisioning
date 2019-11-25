@@ -3,6 +3,6 @@
 
 - name: Install standard set of development tools
   package:
-          name: "Development Tools"
+          name: "@Development Tools"
           state: latest
   become: yes
