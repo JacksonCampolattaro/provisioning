@@ -11,11 +11,12 @@
 
 - name: Creates a missing symlink that can prevent installation
   file:
-          #cmd: ln -s /var/lib/snapd/snap /snap
           src: /var/lib/snapd/snap
           dest: /snap
           state: link
   become: yes
+  
+#cmd: ln -s /var/lib/snapd/snap /snap
   
   
   - name: Make sure snap is prepared to install software
