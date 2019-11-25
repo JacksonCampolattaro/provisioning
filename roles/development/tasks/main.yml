@@ -14,6 +14,7 @@
           src: /var/lib/snapd/snap
           dest: /snap
           state: link
+  become: yes
   
   
 - name: Make sure snap is prepared to install software
