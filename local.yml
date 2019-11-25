@@ -5,6 +5,8 @@
   connection: local
   strategy: debug
   roles:
+          - build-tools
+          - development
           - gnome-theming
           - gnome-terminal
           - zsh
