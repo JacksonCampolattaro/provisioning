@@ -1,0 +1,16 @@
+
+# Installs my IDE's and other things I need for projects
+
+
+- name: Install snap 
+  package:
+          name: snapd
+          state: latest
+  become: yes
+  
+
+- name: Install CLion using snap
+  snap:
+          name: clion
+          classic: yes
+  become: yes
