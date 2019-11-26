@@ -5,6 +5,9 @@
   connection: local
   strategy: debug
   roles:
+          - gnome-settings
+          - music
+          - gaming
           - build-tools
           - development
           - gnome-theming
