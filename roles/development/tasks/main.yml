@@ -2,6 +2,13 @@
 # Installs my IDE's and other things I need for projects
 
 
+- name: Install valgrind 
+  package:
+          name: valgrind
+          state: latest
+  become: yes
+  
+
 - name: Install snap 
   package:
           name: snapd
