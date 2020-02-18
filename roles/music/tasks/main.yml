@@ -1,8 +1,0 @@
-
-# Installs and configures software I use to manage my music collection
-
-- name: Install quod libet
-  package:
-          name: quodlibet
-          state: latest
-  become: yes
