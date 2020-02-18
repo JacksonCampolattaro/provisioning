@@ -1,0 +1,25 @@
+---
+
+sudo: required
+
+services:
+  - docker
+
+env:
+  matrix:
+    - MOLECULE_DISTRO: centos:7
+    - MOLECULE_DISTRO: fedora:27
+    - MOLECULE_DISTRO: fedora:28
+    - MOLECULE_DISTRO: fedora:30
+    - MOLECULE_DISTRO: fedora:31
+    - MOLECULE_DISTRO: ubuntu:xenial
+
+install:
+  - pip install testinfra molecule docker
+
+before_script:
+  - cd roles/
+
+script:
+  - cd dev/
+  - molecule test
