@@ -13,3 +13,6 @@
           name: credential.helper
           scope: global
           value: cache
+
+- include_role:
+    name: dev-c++
