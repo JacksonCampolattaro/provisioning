@@ -13,9 +13,3 @@
           name: credential.helper
           scope: global
           value: cache
-
-- name: Install valgrind
-  package:
-          name: valgrind
-          state: present
-  become: true

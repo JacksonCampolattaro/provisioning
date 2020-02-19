@@ -20,7 +20,10 @@ install:
   - pip3 install molecule docker
 
 before_script:
-  - cd roles/dev
+  - cd roles
 
 script:
+  - cd dev
+  - molecule test
+  - cd dev-c++
   - molecule test
