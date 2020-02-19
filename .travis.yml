@@ -1,5 +1,7 @@
 ---
 
+language: python
+
 sudo: required
 
 services:
@@ -17,11 +19,10 @@ env:
     - MOLECULE_DISTRO: fedora:31
 
 install:
-  - pip install testinfra molecule docker
+  - pip3 install molecule docker
 
 before_script:
-  - cd roles/
+  - cd roles/dev
 
 script:
-  - cd dev/
   - molecule test
