@@ -14,7 +14,7 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  license: GPLv3
 
   min_ansible_version: 1.2
 
@@ -43,6 +43,9 @@ galaxy_info:
   #   - 1.0
   #   - 7
   #   - 99.99
+  platforms:
+    - name: Fedora
+      versions: all
 
   galaxy_tags: []
   # List tags for your role here, one per line. A tag is a keyword that describes
