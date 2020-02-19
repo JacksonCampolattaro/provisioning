@@ -25,5 +25,7 @@ before_script:
 script:
   - cd dev
   - molecule test
+  - cd ..
   - cd dev-c++
   - molecule test
+  - cd ..
