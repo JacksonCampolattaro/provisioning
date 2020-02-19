@@ -5,14 +5,16 @@ sudo: required
 services:
   - docker
 
+before_install:
+  - sudo apt-get -qq update
+
 env:
   matrix:
     - MOLECULE_DISTRO: centos:7
-    - MOLECULE_DISTRO: fedora:27
     - MOLECULE_DISTRO: fedora:28
+    - MOLECULE_DISTRO: fedora:29
     - MOLECULE_DISTRO: fedora:30
     - MOLECULE_DISTRO: fedora:31
-    - MOLECULE_DISTRO: ubuntu:xenial
 
 install:
   - pip install testinfra molecule docker
