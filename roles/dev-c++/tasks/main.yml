@@ -1,6 +1,9 @@
 ---
 # tasks file for dev-c++
 
+- include_role:
+    name: dev
+
 - name: Install gcc-c++
   package:
           name: gcc-c++
