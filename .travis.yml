@@ -1,0 +1,26 @@
+---
+
+language: python
+
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - sudo apt-get -qq update
+
+env:
+  matrix:
+    - MOLECULE_DISTRO: centos:7
+    - MOLECULE_DISTRO: fedora:28
+    - MOLECULE_DISTRO: fedora:31
+
+install:
+  - pip3 install molecule docker
+
+before_script:
+  - cd roles/dev
+
+script:
+  - molecule test

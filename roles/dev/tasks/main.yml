@@ -1,0 +1,21 @@
+---
+# tasks file for dev
+# Installs all the tools I need to do development
+
+- name: Install standard set of development tools
+  package:
+          name: "@Development Tools"
+          state: present
+  become: true
+
+- name: Enable git caching of Github credentials
+  git_config:
+          name: credential.helper
+          scope: global
+          value: cache
+
+- name: Install valgrind
+  package:
+          name: valgrind
+          state: present
+  become: true
