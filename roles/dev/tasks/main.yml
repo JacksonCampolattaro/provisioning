@@ -14,5 +14,4 @@
           scope: global
           value: cache
 
-- include_tasks:
-  name: c++.yml
+- include: c++.yml
