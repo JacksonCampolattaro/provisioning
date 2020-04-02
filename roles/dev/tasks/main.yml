@@ -15,3 +15,27 @@
           value: cache
 
 - include: c++.yml
+
+- name: Install gcc-c++
+  package:
+          name: gcc-c++
+          state: present
+  become: true
+
+- name: Install gdb
+  package:
+          name: gdb
+          state: present
+  become: true
+
+- name: Install valgrind
+  package:
+          name: valgrind
+          state: present
+  become: true
+
+- name: Install perf
+  package:
+          name: perf
+          state: present
+  become: true
