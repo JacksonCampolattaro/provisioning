@@ -2,6 +2,10 @@
 - hosts: all
   connection: local
 
+  pre_tasks:
+    - name: "Install roles from the requirements file"
+      command: ansible-galaxy install -r requirements.yml
+
   roles:
     - role: JacksonCampolattaro.vim
       tags: ['vim']
