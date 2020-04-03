@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: local
   connection: local
 
   pre_tasks:
