@@ -15,12 +15,12 @@ env:
     - MOLECULE_DISTRO: fedora:31
 
 install:
-  - pip3 install molecule docker
-
-before_script:
-  - cd roles
+  - pip install ansible docker
 
 script:
-  - cd vim
-  - molecule test
-  - cd ..
+
+  # Install dependencies
+  - ansible-galaxy install -r requirements.yml
+
+  # Check syntax
+  - ansible-playbook local.yml --syntax-check
