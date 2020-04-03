@@ -1,0 +1,4 @@
+---
+
+- name: JacksonCampolattaro.vim
+  src: https://github.com/JacksonCampolattaro/ansible-role-vim
