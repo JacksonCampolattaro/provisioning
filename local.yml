@@ -8,4 +8,4 @@
 
   roles:
     - role: JacksonCampolattaro.vim
-      tags: ['vim']
+      tags: vim
