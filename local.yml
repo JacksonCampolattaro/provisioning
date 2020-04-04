@@ -2,12 +2,12 @@
 - hosts: 127.0.0.1
   connection: local
 
-  pre_tasks:
-    - name: "Install roles from the requirements file"
-      command: ansible-galaxy install -r requirements.yml
-
   roles:
     - role: JacksonCampolattaro.vim
       tags: vim
     - role: JacksonCampolattaro.zsh
       tags: zsh
+
+  tasks:
+    - name: "Reboot to apply changes"
+      reboot:
