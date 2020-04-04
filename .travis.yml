@@ -5,17 +5,8 @@ language: python
 services:
   - docker
 
-before_install:
-  - sudo apt-get -qq update
-
-env:
-  matrix:
-    - MOLECULE_DISTRO: centos:7
-    - MOLECULE_DISTRO: fedora:28
-    - MOLECULE_DISTRO: fedora:31
-
 install:
-  - pip install ansible docker
+  - pip install ansible
 
 script:
 
@@ -26,4 +17,4 @@ script:
   - ansible-playbook local.yml --syntax-check
 
   # Test the entire playbook
-  - ansible-playbook local.yml -K
+  - ansible-playbook local.yml -vvvv
