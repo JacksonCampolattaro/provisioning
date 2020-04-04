@@ -15,6 +15,3 @@ script:
 
   # Check syntax
   - ansible-playbook local.yml --syntax-check
-
-  # Test the entire playbook
-  - ansible-playbook local.yml -vvvv
