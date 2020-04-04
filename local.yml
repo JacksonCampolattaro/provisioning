@@ -7,7 +7,3 @@
       tags: vim
     - role: JacksonCampolattaro.zsh
       tags: zsh
-
-  tasks:
-    - name: "Reboot to apply changes"
-      reboot:
