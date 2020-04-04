@@ -9,3 +9,5 @@
   roles:
     - role: JacksonCampolattaro.vim
       tags: vim
+    - role: JacksonCampolattaro.zsh
+      tags: zsh

@@ -2,3 +2,6 @@
 
 - name: JacksonCampolattaro.vim
   src: https://github.com/JacksonCampolattaro/ansible-role-vim
+
+- name: JacksonCampolattaro.zsh
+  src: https://github.com/JacksonCampolattaro/ansible-role-zsh
